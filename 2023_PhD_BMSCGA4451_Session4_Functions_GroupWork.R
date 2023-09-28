@@ -8,6 +8,11 @@
   
   #Where X is a given value, mu is the mean value of x, and sd is the standard deviation of x. 
 
+ZScore <- function(x){
+(x-mean(x, na.rm = T))/sd(x, na.rm = T)
+  }
+
+
 ## 2. Apply Breakoutwork
 
 #Use apply to find the Z scores of the center_dist, center_time, periphery_dist and periphery_time columns of crusio1:
